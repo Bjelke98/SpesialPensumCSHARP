@@ -1,0 +1,42 @@
+﻿<Window x:Class="SpotifyShuffle.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SpotifyShuffle"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800"
+        FontFamily="sans-serif"
+        Background="Black">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <ScrollViewer HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Auto">
+                <StackPanel>
+                    <Button>Test</Button>
+                    <Button>Test</Button>
+                    <Button>Test</Button>
+                    <Button>Test</Button>
+                </StackPanel>
+            </ScrollViewer>
+            <ScrollViewer Background="#121212" Grid.Column="1" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Auto">
+
+            </ScrollViewer>
+        </Grid>
+        <StackPanel Orientation="Horizontal" Grid.Row="1" Background="#181818">
+            <Button>Test</Button>
+            <Button>Test</Button>
+            <Button>Test</Button>
+            <Button>Test</Button>
+            <Button>Test</Button>
+        </StackPanel>
+    </Grid>
+</Window>
