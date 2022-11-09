@@ -14,6 +14,6 @@
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
         <TextBlock Text="{Binding FirstName}"/>
-        <Button Content="Click" Command="{Binding ClickCommand}" Grid.Row="1"/>
+        <Button Content="Click" Command="{Binding ClickACommand}" Grid.Row="1"/>
     </Grid>
 </Window>

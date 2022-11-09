@@ -1,25 +1,37 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using System.ComponentModel;
+using System.Threading.Tasks;
 using System.Windows.Input;
 
 namespace Try4 {
     public partial class MainWindowViewModel : ObservableObject {
 
         [ObservableProperty]
-        private string firstName = "Bjelke";
+        [NotifyCanExecuteChangedFor(nameof(ClickCommand))]
+        private string? firstName = "Bjelke";
 
-        public ICommand ClickCommand { get; }
+        partial void OnFirstNameChanged(string? value) {
 
-        public MainWindowViewModel() {
-            ClickCommand = new RelayCommand(OnClick);
         }
 
-        public event PropertyChangedEventHandler? PropertyChanged;
+        private bool CanClick() => FirstName == "Bjelke";
 
-        private void OnClick() {
+        [RelayCommand(CanExecute = nameof(CanClick))]
+        private void Click() {
             FirstName = "Not Bjelke";
         }
+        
+        // Click Command in async
+        //[RelayCommand(CanExecute = nameof(CanClick))]
+        //private async Task ClickA() {
+        //    await Task.Delay(1_000);
+        //    FirstName = "Not Bjelke";
+        //}
+
+
+
+
 
     }
 }
