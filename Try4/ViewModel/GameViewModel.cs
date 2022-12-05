@@ -16,16 +16,16 @@ namespace Try4.ViewModel
         private object? currentGame;
 
         [ObservableProperty]
-        private GameBoard board;
+        private Board gameBoard;
 
         public GameViewModel() {
 
-            Board = new GameBoard();
-            Board.Height = 700;
-            Board.Width = 700;
-           
+            gameBoard = new Board();
+            gameBoard.Height = 700;
+            gameBoard.Width = 700;
 
-            currentGame = board;
+            
+            currentGame = gameBoard;
         }
     }
 }

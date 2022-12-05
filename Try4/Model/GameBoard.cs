@@ -26,6 +26,10 @@ namespace Try4.Model
                 //rd.Height = new GridLength(1, GridUnitType.Star);
                 RowDefinitions.Add(rd);
             }
+            GameTile gt = new GameTile('A', 1);
+            Grid.SetColumn(gt, 0);
+            Grid.SetRow(gt, 0);
+            Children.Add(gt);
         }
     }
 }
