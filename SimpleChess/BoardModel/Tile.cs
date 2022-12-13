@@ -10,8 +10,6 @@ using System.Windows.Media;
 
 namespace SimpleChess.BoardModel {
 
-    
-
     public class Tile {
         private static SolidColorBrush light = new SolidColorBrush(Color.FromRgb(255, 198, 184));
         private static SolidColorBrush dark = new SolidColorBrush(Color.FromRgb(255, 106, 71));
@@ -27,6 +25,9 @@ namespace SimpleChess.BoardModel {
             Col = col;
             Row = row;
             Background = new Rectangle();
+            Unmark();
+            Grid.SetColumn(Background, col);
+            Grid.SetRow(Background, row);
         }
 
         public void Mark() {
@@ -41,8 +42,13 @@ namespace SimpleChess.BoardModel {
             }
         }
 
-        public static void MovePiece(Tile from, Tile to) {
+        public static void MovePiece(Tile from, Tile to, Grid grid) {
+            from.Unmark();
             if(from==to) return;
+            if(!from.piece.isLegalMove(to)) return;
+            if(to.piece is not null) {
+                grid.Children.Remove(to.piece);
+            }
             to.piece = from.piece; from.piece = null;
             Grid.SetColumn(to.piece, to.Col);
             Grid.SetRow(to.piece, to.Row);

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<People>
+  <Person FirstName="Krister" LastName="Iversen" BirthYear="1998" />
+  <Person FirstName="Henrik" LastName="Lindam" BirthYear="1998" />
+  <Person FirstName="Adrian" LastName="Dahl" BirthYear="2000" />
+  <Person FirstName="Olav" LastName="Lille-Østerholt" BirthYear="2001" />
+  <Person FirstName="John Ivar" LastName="Lilleøren Hagen" BirthYear="1901" />
+  <Person FirstName="Herman" LastName="Simonsen" BirthYear="2001" />
+  <Person FirstName="Nils Ole" LastName="Lensebakken" BirthYear="1997" />
+  <Person FirstName="Arne" LastName="Bernt Egil" BirthYear="1990" />
+</People>

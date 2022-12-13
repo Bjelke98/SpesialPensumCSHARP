@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Controls;
 
 namespace SimpleChess.BoardModel {
 
@@ -25,8 +26,18 @@ namespace SimpleChess.BoardModel {
             }
         }
 
+        public void PrintBG(Grid VB) {
+            for (int i = 0; i < 8; i++) {
+                for (int j = 0; j < 8; j++) {
+                    VB.Children.Add(tiles[i, j].Background);
+                }
+            }
+        }
+
         public void AddPiece(Piece piece, int col, int row) {
             tiles[col, row].piece = piece;
+            Grid.SetColumn(piece, col);
+            Grid.SetRow(piece, row);
         }
 
         public Tile GetTile(int col, int row) {

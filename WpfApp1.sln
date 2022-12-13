@@ -13,7 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Try4", "Try4\Try4.csproj", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdventOfCode", "AdventOfCode\AdventOfCode.csproj", "{9C3FF8E5-492B-48C4-A6D5-AD048A5B1CD5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleChess", "SimpleChess\SimpleChess.csproj", "{84A43219-B632-4053-BDA7-20DAE8A6973A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleChess", "SimpleChess\SimpleChess.csproj", "{84A43219-B632-4053-BDA7-20DAE8A6973A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestAvAnnet", "TestAvAnnet\TestAvAnnet.csproj", "{6535E247-E61F-45C7-BD8E-70E9194C935F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{84A43219-B632-4053-BDA7-20DAE8A6973A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{84A43219-B632-4053-BDA7-20DAE8A6973A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{84A43219-B632-4053-BDA7-20DAE8A6973A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6535E247-E61F-45C7-BD8E-70E9194C935F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6535E247-E61F-45C7-BD8E-70E9194C935F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6535E247-E61F-45C7-BD8E-70E9194C935F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6535E247-E61F-45C7-BD8E-70E9194C935F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -28,7 +28,7 @@
             <RowDefinition/>
         </Grid.RowDefinitions>
         
-        <Rectangle Grid.Column="0" Grid.Row="0" Fill="#FFC6B894"/>
+        <!--<Rectangle Grid.Column="0" Grid.Row="0" Fill="#FFC6B894"/>
         <Rectangle Grid.Column="1" Grid.Row="0" Fill="#FF6A472C"/>
         <Rectangle Grid.Column="2" Grid.Row="0" Fill="#FFC6B894"/>
         <Rectangle Grid.Column="3" Grid.Row="0" Fill="#FF6A472C"/>
@@ -98,7 +98,7 @@
         <Rectangle Grid.Column="4" Grid.Row="7" Fill="#FF6A472C"/>
         <Rectangle Grid.Column="5" Grid.Row="7" Fill="#FFC6B894"/>
         <Rectangle Grid.Column="6" Grid.Row="7" Fill="#FF6A472C"/>
-        <Rectangle Grid.Column="7" Grid.Row="7" Fill="#FFC6B894"/>
+        <Rectangle Grid.Column="7" Grid.Row="7" Fill="#FFC6B894"/>-->
 
     </Grid>
 </Window>

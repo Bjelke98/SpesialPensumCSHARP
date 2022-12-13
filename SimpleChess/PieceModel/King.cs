@@ -6,12 +6,11 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace SimpleChess.PieceModel {
-    public class Pawn : Piece {
-        public Pawn(PieceColor pc) : base(PieceType.Pawn, pc) {
-
+    public class King : Piece {
+        public King(PieceColor pc) : base(PieceType.King, pc) {
         }
 
-        public override bool isLegalMove(Tile piece) {
+        public override bool isLegalMove(Tile to) {
             return true;
         }
     }

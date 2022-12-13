@@ -6,8 +6,8 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace SimpleChess.PieceModel {
-    public class Pawn : Piece {
-        public Pawn(PieceColor pc) : base(PieceType.Pawn, pc) {
+    public class Queen : Piece{
+        public Queen(PieceColor pc) : base(PieceType.Queen, pc) {
 
         }
 

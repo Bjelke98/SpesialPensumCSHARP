@@ -11,7 +11,7 @@ namespace AdventOfCode {
         private static readonly string[] moves = File.ReadAllLines(Statics.path + "Day5input.txt");
         private static readonly string[] initial = File.ReadAllLines(Statics.path + "Day5inputB.txt");
 
-        private static Stack<char>[] stacks = new Stack<char>[initial.Length];
+        private static readonly Stack<char>[] stacks = new Stack<char>[initial.Length];
 
         public static void Part1() {
 
